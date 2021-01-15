@@ -77,6 +77,9 @@
     <EmbeddedResource Include="Navigation_client.resx">
       <DependentUpon>Navigation_client.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Navigation_Compte.resx">
+      <DependentUpon>Navigation_Compte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
