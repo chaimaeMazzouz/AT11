@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace AT11_DataSet_XSD
 {
-    public partial class Form1 : Form
+    public partial class Home : Form
     {
-        public Form1()
+        public Home()
         {
             InitializeComponent();
+        }
+        void Changer_Form(Form NewForm)
+        {
+            if (this.ActiveMdiChild != null) this.ActiveMdiChild.Close();
+            NewForm.MdiParent = this;
+            NewForm.Dock = DockStyle.Fill;
+            NewForm.Show();
+        }
+
+        private void navigationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Navigation_client());
         }
     }
 }
