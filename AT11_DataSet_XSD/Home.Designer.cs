@@ -33,6 +33,7 @@
             this.navigationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.compteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.navigationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@
             // clientToolStripMenuItem
             // 
             this.clientToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.navigationToolStripMenuItem});
+            this.navigationToolStripMenuItem,
+            this.ajoutToolStripMenuItem});
             this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
             this.clientToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.clientToolStripMenuItem.Text = "Client";
@@ -73,9 +75,16 @@
             // navigationToolStripMenuItem1
             // 
             this.navigationToolStripMenuItem1.Name = "navigationToolStripMenuItem1";
-            this.navigationToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.navigationToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.navigationToolStripMenuItem1.Text = "Navigation";
             this.navigationToolStripMenuItem1.Click += new System.EventHandler(this.navigationToolStripMenuItem1_Click);
+            // 
+            // ajoutToolStripMenuItem
+            // 
+            this.ajoutToolStripMenuItem.Name = "ajoutToolStripMenuItem";
+            this.ajoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ajoutToolStripMenuItem.Text = "Ajout";
+            this.ajoutToolStripMenuItem.Click += new System.EventHandler(this.ajoutToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -101,6 +110,7 @@
         private System.Windows.Forms.ToolStripMenuItem navigationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem compteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem navigationToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ajoutToolStripMenuItem;
     }
 }
 
