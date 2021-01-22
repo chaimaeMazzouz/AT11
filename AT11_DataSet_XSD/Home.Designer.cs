@@ -35,6 +35,7 @@
             this.compteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.navigationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ajoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.suppressionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +77,8 @@
             // 
             this.compteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.navigationToolStripMenuItem1,
-            this.ajoutToolStripMenuItem1});
+            this.ajoutToolStripMenuItem1,
+            this.suppressionToolStripMenuItem});
             this.compteToolStripMenuItem.Name = "compteToolStripMenuItem";
             this.compteToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.compteToolStripMenuItem.Text = "Compte";
@@ -94,6 +96,13 @@
             this.ajoutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.ajoutToolStripMenuItem1.Text = "Ajout";
             this.ajoutToolStripMenuItem1.Click += new System.EventHandler(this.ajoutToolStripMenuItem1_Click);
+            // 
+            // suppressionToolStripMenuItem
+            // 
+            this.suppressionToolStripMenuItem.Name = "suppressionToolStripMenuItem";
+            this.suppressionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.suppressionToolStripMenuItem.Text = "Suppression";
+            this.suppressionToolStripMenuItem.Click += new System.EventHandler(this.suppressionToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -121,6 +130,7 @@
         private System.Windows.Forms.ToolStripMenuItem navigationToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ajoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajoutToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem suppressionToolStripMenuItem;
     }
 }
 
