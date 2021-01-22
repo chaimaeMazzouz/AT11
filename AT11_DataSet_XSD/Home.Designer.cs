@@ -36,6 +36,7 @@
             this.navigationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ajoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.suppressionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.suppressionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,8 @@
             // 
             this.clientToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.navigationToolStripMenuItem,
-            this.ajoutToolStripMenuItem});
+            this.ajoutToolStripMenuItem,
+            this.suppressionToolStripMenuItem1});
             this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
             this.clientToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.clientToolStripMenuItem.Text = "Client";
@@ -104,6 +106,13 @@
             this.suppressionToolStripMenuItem.Text = "Suppression";
             this.suppressionToolStripMenuItem.Click += new System.EventHandler(this.suppressionToolStripMenuItem_Click);
             // 
+            // suppressionToolStripMenuItem1
+            // 
+            this.suppressionToolStripMenuItem1.Name = "suppressionToolStripMenuItem1";
+            this.suppressionToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.suppressionToolStripMenuItem1.Text = "Suppression";
+            this.suppressionToolStripMenuItem1.Click += new System.EventHandler(this.suppressionToolStripMenuItem1_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,6 +140,7 @@
         private System.Windows.Forms.ToolStripMenuItem ajoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajoutToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem suppressionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem suppressionToolStripMenuItem1;
     }
 }
 

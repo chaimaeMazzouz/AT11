@@ -51,5 +51,11 @@ namespace AT11_DataSet_XSD
             Changer_Form(new Suppression_Comptes());
 
         }
+
+        private void suppressionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Suppression_Clients());
+
+        }
     }
 }
