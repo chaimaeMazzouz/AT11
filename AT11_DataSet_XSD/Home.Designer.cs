@@ -37,6 +37,8 @@
             this.ajoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.suppressionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suppressionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +58,8 @@
             this.clientToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.navigationToolStripMenuItem,
             this.ajoutToolStripMenuItem,
-            this.suppressionToolStripMenuItem1});
+            this.suppressionToolStripMenuItem1,
+            this.modificationToolStripMenuItem1});
             this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
             this.clientToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.clientToolStripMenuItem.Text = "Client";
@@ -80,7 +83,8 @@
             this.compteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.navigationToolStripMenuItem1,
             this.ajoutToolStripMenuItem1,
-            this.suppressionToolStripMenuItem});
+            this.suppressionToolStripMenuItem,
+            this.modificationToolStripMenuItem});
             this.compteToolStripMenuItem.Name = "compteToolStripMenuItem";
             this.compteToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.compteToolStripMenuItem.Text = "Compte";
@@ -113,6 +117,20 @@
             this.suppressionToolStripMenuItem1.Text = "Suppression";
             this.suppressionToolStripMenuItem1.Click += new System.EventHandler(this.suppressionToolStripMenuItem1_Click);
             // 
+            // modificationToolStripMenuItem
+            // 
+            this.modificationToolStripMenuItem.Name = "modificationToolStripMenuItem";
+            this.modificationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificationToolStripMenuItem.Text = "Modification";
+            this.modificationToolStripMenuItem.Click += new System.EventHandler(this.modificationToolStripMenuItem_Click);
+            // 
+            // modificationToolStripMenuItem1
+            // 
+            this.modificationToolStripMenuItem1.Name = "modificationToolStripMenuItem1";
+            this.modificationToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.modificationToolStripMenuItem1.Text = "Modification";
+            this.modificationToolStripMenuItem1.Click += new System.EventHandler(this.modificationToolStripMenuItem1_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +159,8 @@
         private System.Windows.Forms.ToolStripMenuItem ajoutToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem suppressionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem suppressionToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem modificationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificationToolStripMenuItem1;
     }
 }
 

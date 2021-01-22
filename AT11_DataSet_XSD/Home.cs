@@ -57,5 +57,17 @@ namespace AT11_DataSet_XSD
             Changer_Form(new Suppression_Clients());
 
         }
+
+        private void modificationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Modification_Comptes());
+
+        }
+
+        private void modificationToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Modification_Clients());
+
+        }
     }
 }

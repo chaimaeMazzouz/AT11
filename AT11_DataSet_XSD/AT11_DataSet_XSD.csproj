@@ -69,6 +69,18 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modification_Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modification_Clients.Designer.cs">
+      <DependentUpon>Modification_Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modification_Comptes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modification_Comptes.Designer.cs">
+      <DependentUpon>Modification_Comptes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Navigation_client.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +115,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modification_Clients.resx">
+      <DependentUpon>Modification_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modification_Comptes.resx">
+      <DependentUpon>Modification_Comptes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Navigation_client.resx">
       <DependentUpon>Navigation_client.cs</DependentUpon>
