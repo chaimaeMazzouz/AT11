@@ -39,6 +39,8 @@
             this.suppressionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.modificationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportDataSetXmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importDataSetXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +48,9 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientToolStripMenuItem,
-            this.compteToolStripMenuItem});
+            this.compteToolStripMenuItem,
+            this.exportDataSetXmlToolStripMenuItem,
+            this.importDataSetXMLToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -131,6 +135,20 @@
             this.modificationToolStripMenuItem1.Text = "Modification";
             this.modificationToolStripMenuItem1.Click += new System.EventHandler(this.modificationToolStripMenuItem1_Click);
             // 
+            // exportDataSetXmlToolStripMenuItem
+            // 
+            this.exportDataSetXmlToolStripMenuItem.Name = "exportDataSetXmlToolStripMenuItem";
+            this.exportDataSetXmlToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
+            this.exportDataSetXmlToolStripMenuItem.Text = "Export DataSet Xml";
+            this.exportDataSetXmlToolStripMenuItem.Click += new System.EventHandler(this.exportDataSetXmlToolStripMenuItem_Click);
+            // 
+            // importDataSetXMLToolStripMenuItem
+            // 
+            this.importDataSetXMLToolStripMenuItem.Name = "importDataSetXMLToolStripMenuItem";
+            this.importDataSetXMLToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
+            this.importDataSetXMLToolStripMenuItem.Text = "Import DataSet XML";
+            this.importDataSetXMLToolStripMenuItem.Click += new System.EventHandler(this.importDataSetXMLToolStripMenuItem_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,6 +179,8 @@
         private System.Windows.Forms.ToolStripMenuItem suppressionToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem modificationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificationToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exportDataSetXmlToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importDataSetXMLToolStripMenuItem;
     }
 }
 

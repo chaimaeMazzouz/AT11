@@ -69,5 +69,33 @@ namespace AT11_DataSet_XSD
             Changer_Form(new Modification_Clients());
 
         }
+
+        private void exportDataSetXmlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataSet1 ds = new DataSet1();
+                ds.WriteXmlSchema("Banque_xml.xsd");
+                MessageBox.Show("Enregitrement en Xml effectuée");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void importDataSetXMLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataSet1 ds = new DataSet1();
+                ds.ReadXmlSchema("Banque_xml.xsd");
+                MessageBox.Show("Importation en Xml effectuée");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

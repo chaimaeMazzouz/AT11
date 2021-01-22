@@ -36,21 +36,21 @@
             this.btnSuivant = new System.Windows.Forms.Button();
             this.btnPremier = new System.Windows.Forms.Button();
             this.textSolde = new System.Windows.Forms.TextBox();
+            this.compteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new AT11_DataSet_XSD.DataSet1();
             this.textNumCl = new System.Windows.Forms.TextBox();
             this.textNumComp = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtNbreCompte = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.textTypeC = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dataSet1 = new AT11_DataSet_XSD.DataSet1();
-            this.compteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.compteTableAdapter = new AT11_DataSet_XSD.DataSet1TableAdapters.CompteTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.compteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // Import_xml
@@ -121,6 +121,16 @@
             this.textSolde.Size = new System.Drawing.Size(100, 20);
             this.textSolde.TabIndex = 24;
             // 
+            // compteBindingSource
+            // 
+            this.compteBindingSource.DataMember = "Compte";
+            this.compteBindingSource.DataSource = this.dataSet1;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textNumCl
             // 
             this.textNumCl.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compteBindingSource, "Num_Client", true));
@@ -132,37 +142,10 @@
             // textNumComp
             // 
             this.textNumComp.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compteBindingSource, "Num_Compte", true));
-            this.textNumComp.Location = new System.Drawing.Point(211, 239);
+            this.textNumComp.Location = new System.Drawing.Point(211, 245);
             this.textNumComp.Name = "textNumComp";
             this.textNumComp.Size = new System.Drawing.Size(100, 20);
             this.textNumComp.TabIndex = 22;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(84, 345);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Solde";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(84, 298);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 13);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Num de Client";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(84, 247);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 13);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Num de Compte";
             // 
             // txtNbreCompte
             // 
@@ -172,24 +155,6 @@
             this.txtNbreCompte.Size = new System.Drawing.Size(41, 20);
             this.txtNbreCompte.TabIndex = 18;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 147);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 13);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Nombre des Comptes";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(362, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 13);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Navigation Compte";
-            // 
             // textTypeC
             // 
             this.textTypeC.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.compteBindingSource, "TypeC", true));
@@ -198,36 +163,89 @@
             this.textTypeC.Size = new System.Drawing.Size(100, 20);
             this.textTypeC.TabIndex = 32;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(84, 387);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 13);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Type Compte";
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // compteBindingSource
-            // 
-            this.compteBindingSource.DataMember = "Compte";
-            this.compteBindingSource.DataSource = this.dataSet1;
-            // 
             // compteTableAdapter
             // 
             this.compteTableAdapter.ClearBeforeFill = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.LightCoral;
+            this.label3.Location = new System.Drawing.Point(72, 384);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(101, 16);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Type Compte";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.LightCoral;
+            this.label4.Location = new System.Drawing.Point(72, 246);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(118, 16);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Num de Compte";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.LightCoral;
+            this.label5.Location = new System.Drawing.Point(72, 298);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 16);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Num de Client";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.LightCoral;
+            this.label6.Location = new System.Drawing.Point(72, 342);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 16);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "Solde";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LightCoral;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(284, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(196, 24);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "Navigation Comptes";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightCoral;
+            this.label2.Location = new System.Drawing.Point(58, 144);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(158, 16);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "Nombre des Comptes";
             // 
             // Navigation_Compte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textTypeC);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.textTypeC);
             this.Controls.Add(this.Import_xml);
             this.Controls.Add(this.Export_xml);
             this.Controls.Add(this.btnDernier);
@@ -237,17 +255,12 @@
             this.Controls.Add(this.textSolde);
             this.Controls.Add(this.textNumCl);
             this.Controls.Add(this.textNumComp);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNbreCompte);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Navigation_Compte";
             this.Text = "Navigation_Compte";
             this.Load += new System.EventHandler(this.Navigation_Compte_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.compteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,16 +277,16 @@
         private System.Windows.Forms.TextBox textSolde;
         private System.Windows.Forms.TextBox textNumCl;
         private System.Windows.Forms.TextBox textNumComp;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNbreCompte;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textTypeC;
-        private System.Windows.Forms.Label label6;
         private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource compteBindingSource;
         private DataSet1TableAdapters.CompteTableAdapter compteTableAdapter;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
