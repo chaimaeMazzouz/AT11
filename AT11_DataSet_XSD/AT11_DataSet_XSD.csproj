@@ -83,6 +83,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ajout_Client.resx">
+      <DependentUpon>Ajout_Client.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ajout_Comptes.resx">
       <DependentUpon>Ajout_Comptes.cs</DependentUpon>
     </EmbeddedResource>
