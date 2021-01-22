@@ -21,6 +21,8 @@ namespace AT11_DataSet_XSD
         {
             // TODO: This line of code loads data into the 'dataSet1.Compte' table. You can move, or remove it, as needed.
             this.compteTableAdapter.Fill(this.dataSet1.Compte);
+            // TODO: This line of code loads data into the 'dataSet1.Compte' table. You can move, or remove it, as needed.
+            this.compteTableAdapter.Fill(this.dataSet1.Compte);
 
         }
 
