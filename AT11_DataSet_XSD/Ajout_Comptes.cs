@@ -42,7 +42,7 @@ namespace AT11_DataSet_XSD
                     C1[3] = comboTypeC.Text;
                     C1.EndEdit();
                     this.dataSet1.Compte.Rows.Add(C1);
-
+                    dataGridView1.Refresh();
                     MessageBox.Show("Ajout effectué");
 
                     comboNumClient.Text = "-Faites votre choix-";
@@ -55,6 +55,10 @@ namespace AT11_DataSet_XSD
                 {
                     MessageBox.Show(exp.Message);
                 }
+            }
+            else
+            {
+                MessageBox.Show("Remplir les champs");
             }
         }
 

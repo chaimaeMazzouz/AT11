@@ -37,8 +37,13 @@ namespace AT11_DataSet_XSD
 
         private void ajoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Changer_Form(new Ajout_Comptes());
+            Changer_Form(new Ajout_Client());
 
+        }
+
+        private void ajoutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Changer_Form(new Ajout_Comptes());
         }
     }
 }
